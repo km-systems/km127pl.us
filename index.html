@@ -12,33 +12,84 @@
 	<title>km127pl.us</title>
 </head>
 
-<body class="bg-neutral-950 text-gray-100 h-screen">
+<body class="bg-neutral-950 text-gray-100 h-screen dark">
 	<div class="flex h-full p-16 pl-96 pr-64 space-x-6">
 		<div
 			class="flex-none w-1/4 bg-neutral-900 rounded-xl h-3/4 shadow-md p-16 mr-4 border border-neutral-700 flex items-center flex-col">
-			<div class="rounded-xl pb-6">
-				<img src="./avatar.png" alt="km127pl logo" class="rounded-xl">
+			<div class="rounded-xl pb-4">
+				<img src="./avatar.png" alt="km127pl logo" class="rounded-xl ring-neutral-800 ring-1">
 			</div>
-			<h1 class="text-3xl font-semibold mb-4">km127pl</h1>
-			<div class="ring-1 p-2 rounded-lg ring-neutral-700 bg-neutral-800 text-sm">somewhat a developer</div>
-			<hr class="w-full mb-4 mt-6 ">
-			<div class="contact">
-				<div class="flex flex-row flex-end mb-2">
-					<img src="./discord-mark-white.svg" alt="discord" class="w-6 mr-2">
-					<span class="text-sm">km127pl</span>
-				</div>
-				<div class="flex flex-row flex-end mb-2">
-					<img src="./github-mark-white.svg" alt="github" class="w-6 mr-2">
-					<span class="text-sm">km127pl</span>
-				</div>
+			<div class="flex gap-2">
+				<span class="text-lg">km127pl</span>
+				<a href="">
+					<span
+						class="rounded-full px-2.5 py-1.5 text-sm font-medium leading-none ring-1 ring-green-400/30 bg-green-400/10 text-green-400">he/they</span>
+				</a>
+			</div>
+			<span class="h-px my-6 ring-1 bg-neutral-800 w-48 ring-neutral-800 bg-none rounded-sm"></span>
+			<div class="flex flex-col gap-2">
+				<!-- discord -->
+				<a href="https://discord.com/users/216160092658073602" target="_blank">
+					<div class="flex gap-2 items-center">
+						<span class="rounded-full ring-1 ring-neutral-800 p-2">
+							<img src="./icons/discord-mark-white.svg" alt="discord logo" class="w-4 h-4">
+						</span>
+						<span class="text-lg">km127pl</span>
+					</div>
+				</a>
+				<!--github  -->
+				<a href="https://github.com/km127pl" target="_blank">
+					<div class="flex gap-2 items-center">
+						<span class="rounded-full ring-1 ring-neutral-800 p-2">
+							<img src="./icons/github-mark-white.svg" alt="km127pl logo" class="w-4 h-4">
+						</span>
+						<span class="text-lg">km127pl</span>
+					</div>
+				</a>
+				<!-- mastodon -->
+				<a href="https://mastodon.social/@km127pl" target="_blank">
+					<div class="flex gap-2 items-center">
+						<span class="rounded-full ring-1 ring-neutral-800 p-2">
+							<img src="./icons/mastodon-mark-white.svg" alt="mastodon logo" class="w-4 h-4">
+						</span>
+						<span class="text-lg">km127pl</span>
+					</div>
+				</a>
+				<!-- email -->
+				<a href="mailto:km127pl@gmail.com" target="_blank">
+					<div class="flex gap-2 items-center">
+						<span class="rounded-full ring-1 ring-neutral-800 p-2">
+							<img src="./icons/email.svg" alt="mail logo" class="w-4 h-4">
+						</span>
+						<span class="text-lg">km127pl</span>
+					</div>
+				</a>
 			</div>
 		</div>
 
 		<div class="flex-grow bg-neutral-900 rounded-xl shadow-md p-6 border text-neutral-300  border-neutral-700">
-			<h1 class="text-3xl font-bold mb-4 pb-4 pt-4 text-white">About me</h1>
+			<h1 class="text-3xl font-bold mb-4 pb-2 pt-2 text-white">About me</h1>
 			<p>Hey! I'm KM127PL</p>
 			<p>A software engineer from Central Europe, with a passion for programming and technology.</p>
-			<h1 class="text-2xl font-bold mb-4 pb-4 pt-4  text-white"">Technologies I use</h1>
+			<h1 class="text-2xl font-bold mb-4 pb-0 pt-4  text-white"">What can I do?</h1>
+			<ul class="list-disc pl-6">
+				<ul>
+					<li class="flex flex-row items-center gap-4">
+						<span>Java</span>
+						<div class="relative w-3/4 h-2">
+							<span class="absolute inset-0 bg-neutral-700 rounded-full h-full w-3/4"></span>
+							<span class="absolute inset-0 ring-1 ring-green-400/30 bg-green-400 rounded-full h-full w-2/4"></span>
+						</div>
+					</li>
+					<li class="flex flex-row items-center gap-4">
+						<span>JavaScript</span>
+						<div class="relative w-3/4 h-2">
+							<span class="absolute inset-0 bg-neutral-700 rounded-full h-full w-3/4"></span>
+							<span class="absolute inset-0 ring-1 ring-green-400/30 bg-green-400 rounded-full h-full w-1/5"></span>
+						</div>
+					</li>
+				</ul>
+			</ul>
 		</div>
 	</div>
 
