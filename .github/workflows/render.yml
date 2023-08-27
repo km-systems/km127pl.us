@@ -1,0 +1,30 @@
+name: Render the HTML
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Replace variables in HTML
+        run: |
+          sed -i "s/{{ year }}/$(date +'%Y')/g" src/index.html
+          sed -i "s/{{ commit }}/${{ github.sha }}/g" src/index.html
+
+      - name: Copy to root
+        run: cp src/index.html index.html
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.html
+          git commit -m "Update HTML"
+          git push
