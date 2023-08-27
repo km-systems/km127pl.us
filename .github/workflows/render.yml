@@ -20,7 +20,9 @@ jobs:
       - name: Replace variables in HTML
         run: |
           sed -i "s/{{ year }}/$(date +'%Y')/g" src/index.html
+          sed -i "s/{{ commit_short }}/$(echo ${{ github.sha }} | cut -c 1-8)/g" src/index.html
           sed -i "s/{{ commit }}/${{ github.sha }}/g" src/index.html
+
 
       - name: Copy to root
         run: cp src/index.html index.html
